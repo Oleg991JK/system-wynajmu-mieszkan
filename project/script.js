@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const surname = document.getElementById('surnameInput').value;
             const phone = document.getElementById('phoneInput').value;
             const pass = document.getElementById('passwordInput').value;
-            if (name === "Roman" && surname === "Honcharuk" && phone === "123456789" && email === "honchatuk2005@gmail.com" && pass === "123456") {
+            if (name === "Roman" && surname === "Honcharuk" && phone === "123456789" && email === "honcharuk@gmail.com" && pass === "123456") {
                 window.location.href = 'main.html';
             } else {
                 alert("Błędny e-mail lub hasło!");
