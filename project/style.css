@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    background: 
+        
+        linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),
+        
+        
+        linear-gradient(to bottom, rgba(71, 71, 71, 0.12), rgba(173, 173, 173, 0.26)),
+        
+        
+        url('background.jpg') no-repeat center center/cover;
+    
+    color: white;
+}
+
+/* Шапка сайту */
+.header {
+    display: flex;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.logo-icon {
+    height: 40px; 
+    width: auto;
+}
+
+.logo-name {
+    color: #ffffff;
+    font-size: 32px; 
+    font-weight: 700; 
+    letter-spacing: -0.5px;
+}
+
+.logo-com {
+    font-size: 16px; 
+    font-weight: 400; 
+    margin-left: 1px;
+}
+
+
+
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10%; 
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.welcome-text span {
+    color: #f38d41; 
+    font-style: italic;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 1px solid #f38d41;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-login {
+    background: linear-gradient(to right, #ff9d42, #f35b25);
+    border: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+.btn-signin {
+    background: transparent;
+    border: 1px solid #aaa; 
+    padding: 12px 35px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+
+.btn-signin:hover {
+    
+    border-color: #f35b25; 
+    color: #f35b25; 
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+}

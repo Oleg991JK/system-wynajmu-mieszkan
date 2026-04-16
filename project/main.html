@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vindo - Witamy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="search-style.css">
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="background-overlay"></div>
+        
+        <header class="header">
+            <div class="logo">
+                
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            <div class="welcome-text">
+                <h1>Witamy w Vindo!</h1>
+                <p>Znajdź idealny dom na następną podróż</p>
+            </div>
+
+            <div class="search-bar-horizontal">
+                <div class="search-input">
+                    <label>Lokalizacja</label>
+                    <input type="text" id="locationInput" placeholder="Dokąd się wybierasz?">
+                </div>
+                
+                <div class="divider"></div>
+
+                <div class="search-input">
+                    <label>Zameldowanie</label>
+                    <input type="date" id="checkInDate">
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="search-input">
+                    <label>Wymeldowanie</label>
+                    <input type="date" id="checkOutDate">
+                </div>
+
+                <button id="findBtn" class="search-icon-btn">Szukaj</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

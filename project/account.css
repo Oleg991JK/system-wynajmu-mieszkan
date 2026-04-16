@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    padding-top: 100px;
+}
+
+/* HEADER */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #D5350D;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo-text { font-size: 24px; font-weight: 800; cursor: pointer; color: white; }
+.logo-dot { color: white; }
+
+.btn-logout {
+    padding: 8px 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-logout:hover { color: #f35b25; border-color: #f35b25; }
+
+/* CONTAINER */
+.account-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.stat-label { color: #64748b; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
+.stat-value { display: block; font-size: 1.4rem; font-weight: 800; margin-top: 5px; color: #0f172a; }
+.status-active { color: #10b981; }
+
+/* PROFILE CARD */
+.profile-card {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    padding: 40px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f1f5f9;
+    margin-bottom: 30px;
+}
+
+.avatar-large {
+    width: 80px;
+    height: 80px;
+    background: #f35b25;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.header-info h2 { font-size: 1.6rem; color: #0f172a; }
+.header-info p { color: #64748b; font-weight: 500; }
+
+/* INFO GRID */
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+.info-group p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
