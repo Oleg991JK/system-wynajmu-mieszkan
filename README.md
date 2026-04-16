@@ -6,7 +6,7 @@ być intuicyjny . Użytkownicy mogą przeglądać dostępne mieszkania, rezerwow
 
  Proces realizacji wynajmu(Scenariusz)
  
-1. Loguje się lub kontynuuje bez rejestracji.
+1. Uzytkownik Loguje się lub kontynuuje bez rejestracji.
 2. Wybiera mieszkanie i termin wynajmu.
 3. Użytkownik przegląda dostępne mieszkania.
 4. Dokonuje rezerwacji.
