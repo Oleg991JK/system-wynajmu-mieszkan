@@ -6,6 +6,7 @@ Opis projektu
 •	Dla kogo jest: System jest przeznaczony dla osób szukających zakwaterowania (najemców) 
 •	Jaki problem rozwiązuje: Projekt rozwiązuje problem trudnego i czasochłonnego procesu rezerwacji, oferując intuicyjny interfejs do sprawdzania dostępności miejsc w czasie rzeczywistym.
 Sprint plan
+
 •	Sprint 1 | Cel (Kamień milowy): Project setup, Design prototype, Logo | Done
 •	Sprint 2 | Cel (Kamień milowy): User log/reg page, Konto panel, Apartment listing page, Filtracja mieszkań | Done
 •	Sprint 3 | Cel (Kamień milowy): Frontend & Backend setup, Apartment details page | In Progress
@@ -16,6 +17,8 @@ Autorzy
 •	Roman Honcharuk (2MIDIA3) — Prototypowanie, testy funkcjonalne, baza danych
 •	Tamirlan Ualikhan (dirolfx228) — Widoki mieszkań, design logo i testy, Prezentacja
 •	Nazar Shanhin (Liccentia) — Backend, logika systemowa, GitHub
+
+
 Technologie
 Frontend:
 •	HTML
