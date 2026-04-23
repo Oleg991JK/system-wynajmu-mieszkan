@@ -5,55 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vindo | Mój Profil</title>
     <link rel="stylesheet" href="account.css">
+    <script src="auth.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vindo | Mój Profil</title>
+    <link rel="stylesheet" href="account.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="auth.js"></script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="header-container">
-            <div class="header-logo" onclick="location.href='main.html'">
+            <div class="header-logo" onclick="location.href='main.html'" style="cursor:pointer">
                 <span class="logo-text">Vindo<span class="logo-dot">.com</span></span>
             </div>
             <div class="header-user">
-                <button class="btn-logout" onclick="location.href='index.html'">Wyloguj</button>
+                <button class="btn-logout" onclick="localStorage.removeItem('userVindo'); location.href='index.html'">Wyloguj</button>
             </div>
         </div>
     </header>
 
     <div class="account-container">
-        
-
         <div class="account-single-col">
             <main class="profile-card">
                 <div class="profile-header">
-                    <div class="avatar-large">RH</div>
+                    <div class="avatar-large" id="userAvatar">--</div>
                     <div class="header-info">
-                        <h2>Roman Honcharuk</h2>
-                        <p>honchatuk2005@gmail.com</p>
+                        <h2 id="displayFullNameHeader"></h2>
+                        <p id="displayEmailHeader"></p>
                     </div>
                 </div>
 
                 <div class="info-section">
                     <div class="info-group">
                         <label>Imię i nazwisko</label>
-                        <p>Roman Honcharuk</p>
+                        <p id="displayFullName">---</p>
                     </div>
                     <div class="info-group">
                         <label>Adres e-mail</label>
-                        <p>honchatuk2005@gmail.com</p>
+                        <p id="displayEmail">---</p>
                     </div>
                     <div class="info-group">
-                        <label>Numer telefonu</label>
-                        <p>+48 123 456 789</p>
+                        <label>Hasło</label>
+                        <p id="displayPassword">********</p>
                     </div>
                     <div class="info-group">
-                        <label>Data rejestracji</label>
-                        <p>15.04.2024</p>
+                        <label>Status konta</label>
+                        <p>Aktywne (od 2024)</p>
                     </div>
                 </div>
             </main>
         </div>
     </div>
+
+</body>
+</html>
 
 </body>
 </html>

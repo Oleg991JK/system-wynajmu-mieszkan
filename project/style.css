@@ -105,14 +105,6 @@ input::placeholder {
     color: #aaa;
 }
 
-.forgot-password {
-    display: block;
-    text-align: right;
-    color: #aaa;
-    text-decoration: none;
-    font-size: 0.8rem;
-    margin-bottom: 30px;
-}
 
 
 .button-group {
@@ -132,22 +124,9 @@ input::placeholder {
 }
 
 
-.btn-signin {
-    background: transparent;
-    border: 1px solid #aaa; 
-    padding: 12px 35px;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease; 
-}
 
 
-.btn-signin:hover {
-    
-    border-color: #f35b25; 
-    color: #f35b25; 
-}
+
 
 .btn-login:hover {
     transform: scale(1.05);

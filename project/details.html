@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vindo | Szczegóły obiektu</title>
+    <link rel="stylesheet" href="property.css">
+    <link rel="stylesheet" href="details.css">
+    <script src="data.js"></script>
+    <script src="details.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-logo" onclick="location.href='main.html'">
+                <span class="logo-text">Vindo<span class="logo-dot">.com</span></span>
+            </div>
+            <button class="btn-back" onclick="history.back()">← Powrót</button>
+        </div>
+    </header>
+
+    <main class="property-container">
+        <section class="property-gallery">
+            <img id="mainImage" src="" alt="Property Image">
+            <div class="price-tag"><span id="priceValue">...</span> PLN / mies.</div>
+        </section>
+
+        <div class="property-grid">
+            <div class="property-info">
+                <h1 id="propertyTitle">Ładowanie...</h1>
+                <p class="location-text">📍 <span id="propertyCity">...</span></p>
+                
+                <div class="features-row">
+                    <div class="feat-item">🛏️ 1 Pokój</div>
+                    <div class="feat-item">📏 32 m²</div>
+                    <div class="feat-item">🏢 2 Piętro</div>
+                </div>
+
+                <div class="description-box">
+                    <h3>O tym miejscu</h3>
+                    <p id="propertyDesc">
+                        </p>
+                </div>
+
+                <div class="amenities-box">
+                    <h3>Zasady i udogodnienia</h3>
+                    <ul class="amenities-list">
+                        <li id="smokingRule"></li>
+                        <li id="petsRule"></li>
+                        <li>📶 Szybkie Wi-Fi</li>
+                        <li>🧼 Pralka w łazience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -10,7 +10,7 @@ body {
     padding-top: 100px;
 }
 
-/* HEADER */
+
 .main-header {
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@ body {
 
 .btn-logout:hover { color: #f35b25; border-color: #f35b25; }
 
-/* CONTAINER */
+
 .account-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -66,7 +66,7 @@ body {
 .stat-value { display: block; font-size: 1.4rem; font-weight: 800; margin-top: 5px; color: #0f172a; }
 .status-active { color: #10b981; }
 
-/* PROFILE CARD */
+
 .profile-card {
     background: white;
     border-radius: 24px;
@@ -99,7 +99,7 @@ body {
 .header-info h2 { font-size: 1.6rem; color: #0f172a; }
 .header-info p { color: #64748b; font-weight: 500; }
 
-/* INFO GRID */
+
 .info-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
