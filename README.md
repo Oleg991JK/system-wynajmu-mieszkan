@@ -29,7 +29,6 @@
 * **Zaawansowane filtry:** Wyszukiwanie ofert według ceny (suwak), lokalizacji oraz akceptacji zwierząt/palenia.
 * **Strony szczegółów:** Dynamiczne renderowanie informacji o obiekcie na podstawie ID z parametrów URL.
 * **Symulacja płatności:** Interaktywny proces rezerwacji z walidacją karty i potwierdzeniem transakcji.
-* **Responsive Design:** Pełna obsługa urządzeń mobilnych i tryb Dark Mode.
 
 # 7. Architektura projektu
 Aplikacja oparta jest na architekturze klient-serwer:
