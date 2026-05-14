@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vindo.com - Szczegóły oferty</title>
+    <link rel="stylesheet" href="details.css"> 
+</head>
+<body class="dark-theme">
+
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='list.html'" style="cursor:pointer">
+            Vindo<span>.com</span>
+        </div>
+        <button class="btn-back" onclick="location.href='list.html'">← Powrót</button>
+    </nav>
+
+    <div class="container">
+        <main class="details-layout">
+            
+            <!-- Ліва частина: Зображення та опис -->
+            <section class="main-content">
+                <div class="main-image-container">
+                    <img id="detailImg" src="placeholder.jpg" alt="Zdjęcie mieszkania">
+                    <div class="price-tag" id="detailPrice">... PLN / mies.</div>
+                </div>
+
+                <div class="info-header">
+                    <h1 id="detailTitle">Ładowanie danych...</h1>
+                    <p class="location" id="detailCity">📍 ...</p>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="icon">🏠</span>
+                        <p>1 Pokój</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="icon">📐</span>
+                        <p>32 m²</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="icon">🏢</span>
+                        <p>Piętro 2</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="description-section">
+                    <h2>O tym miejscu</h2>
+                    <p id="detailDescription">
+                        Świetna lokalizacja, wysoki standard wykończenia oraz pełne wyposażenie. 
+                        Idealne dla osób szukających komfortu w sercu miasta.
+                    </p>
+                </div>
+
+                <div class="features-section">
+                    <h2>Zasady i udogodnienia</h2>
+                    <ul class="features-list" id="detailFeatures">
+                        <!-- Сюди JS додасть тварин та куріння -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Права частина: Картка контакту -->
+            <aside class="contact-sidebar">
+                <div class="contact-card">
+                    <h3>Zainteresowany?</h3>
+                    <p>Skontaktuj się z właścicielem lub zarezerwuj termin.</p>
+                    
+                    <div class="owner-info">
+                        <div class="owner-avatar">?</div>
+                        <div>
+                            <p class="owner-name">Właściciel</p>
+                            <p class="owner-type">Prywatna oferta</p>
+                        </div>
+                    </div>
+
+                    <button class="btn-contact" onclick="alert('Telefon: +48 123 456 789')">Pokaż telefon</button>
+                    <button class="btn-message-outline">Zarezerwuj</button>
+                </div>
+            </aside>
+
+        </main>
+    </div>
+    Це ідеальне рішення для MVP! Ми додамо модальне вікно (popup), яке буде відкриватися при натисканні на твою кнопку "Zarezerwuj". Користувач зможе ввести дані (імітація), а після натискання побачить повідомлення про успіх.
+
+Ось як це реалізувати:
+
+1. Додай HTML структуру в details.html
+Встав цей блок у самому кінці файлу, перед закриваючим тегом </body>.
+
+HTML
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Metoda płatności</h2>
+        <p>Rezerwacja obiektu: <strong id="modalTitle">...</strong></p>
+        
+        <form id="paymentForm">
+            <div class="input-group">
+                <label>Numer karty</label>
+                <input type="text" placeholder="0000 0000 0000 0000" maxlength="19" required>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Data ważności</label>
+                    <input type="text" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div class="input-group">
+                    <label>CVV</label>
+                    <input type="password" placeholder="***" maxlength="3" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-contact" id="confirmPayBtn">Zapłać i zarezerwuj</button>
+        </form>
+
+        <div id="successMessage" style="display: none; text-align: center;">
+            <div class="success-icon">✅</div>
+            <h3>Płatność udana!</h3>
+            <p>Twoja rezerwacja została potwierdzona. Dziękujemy!</p>
+            <button class="btn-message-outline" onclick="location.reload()">Zamknij</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Підключаємо JS логіку -->
+    <script src="details.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* Основні кольори Vindo Dark Mode */
+body.dark-theme {
+    background-color: #0f141e;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #d84315; /* Помаранчевий як на списку */
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.details-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.main-content { flex: 2; }
+.contact-sidebar { flex: 1; }
+
+/* Зображення */
+.main-image-container {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 450px;
+    background-color: #1e2533;
+}
+
+.main-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Картка контакту */
+.contact-card {
+    background: #1e2533;
+    padding: 30px;
+    border-radius: 24px;
+    position: sticky;
+    top: 20px;
+    border: 1px solid #2d3545;
+}
+
+.btn-contact {
+    width: 100%;
+    background: #ff385c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-back {
+    background: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Списки */
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.btn-message-outline {
+    width: 100%;
+    background-color: blue;
+    color: #ffffff; /* Білий текст */
+    
+    /* Тонка рамка кольору акценту (помаранчевий) */
+ 
+    
+    padding: 14px 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+    
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style dla modala */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #1e2533;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    position: relative;
+    border: 1px solid #333;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px; top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #888;
+}
+
+.input-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+.input-group label { font-size: 14px; margin-bottom: 5px; color: #ccc; }
+.input-group input {
+    background: #0f141e;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+.input-row { display: flex; gap: 15px; }
+
+.success-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+

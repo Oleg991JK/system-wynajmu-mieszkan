@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vindo.com - Lista Mieszkań</title>
+    <link rel="stylesheet" href="list-style.css">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="logo">Vindo<span>.com</span></div>
+        <button class="btn-account">Konto</button>
+    </nav>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="filter-box">
+                <h3>Filtry:</h3>
+                
+                <div class="filter-group">
+                    <div class="label-row">
+                        <label>Max cennik:</label>
+                        <span id="priceValue" class="price-badge">1000 PLN</span>
+                    </div>
+                    <input type="range" id="priceRange" min="50" max="1000" value="1000">
+                    <div class="range-labels">
+                        <span>50</span>
+                        <span>1000+</span>
+                    </div>
+                </div>
+
+                <div class="filter-group checkboxes">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="smokingFilter">
+                        <span class="checkmark"></span> można palić
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="petsFilter">
+                        <span class="checkmark"></span> można ze zwierzętami
+                    </label>
+                </div>
+
+                <button id="resetFiltersBtn" class="btn-reset-outline">
+                    <span>🔄</span> zresetuj
+                </button>
+            </div>
+        </aside>
+
+        <!-- Основний контент -->
+        <main class="content">
+            <div id="listingsGrid" class="listings-grid">
+                <!-- Картки тут -->
+            </div>
+        </main>
+    </div>
+
+    <script src="list.js"></script>
+</body>
+</html>
+
+  <script src="list.js"></script>
