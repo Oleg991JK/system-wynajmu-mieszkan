@@ -13,6 +13,16 @@ Skopiuj projekt z repozytorium GitHub na swój komputer za pomocą terminala:
 ```bash
 git clone [https://github.com/Oleg991JK/system-wynajmu-mieszkan.git](https://github.com/Oleg991JK/system-wynajmu-mieszkan.git)
 cd system-wynajmu-mieszkan
+### 2. Instalacja zależności
+npm install
+### 3. Konfiguracja zmiennych środowiskowych
+PORT=3000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.abcde.mongodb.net/vindo_db
+### 4. Uruchomienie aplikacji
+npm start
+### 5. Wyświetlenie w przeglądarce
+Otwórz przeglądarkę internetową i przejdź pod adres:
+ http://localhost:3000
    
 # 3. Sprint plan
 - [x] System logowania użytkowników
