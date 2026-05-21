@@ -4,7 +4,7 @@
 **Vindo.com** to nowoczesna platforma typu Fullstack służąca do przeglądania i rezerwacji ofert wynajmu mieszkań. Projekt łączy dynamiczny interfejs użytkownika (Frontend) z autorskim serwerem (Backend), umożliwiając płynne wyszukiwanie ofert oraz symulację procesu płatności. Projekt został stworzony jako demonstracja umiejętności budowania aplikacji typu Single Page Application (SPA) z komunikacją asynchroniczną.
 ---
 
-## 🛠️ Jak uruchomić projekt na komputerze
+##  Jak uruchomić projekt na komputerze
 
 ### Krok 1: Pobierz pliki projektu
 1. Pobierz ten projekt jako plik ZIP (kliknij zielony przycisk **"Code"** na górze strony, a następnie **"Download ZIP"**).
@@ -24,7 +24,7 @@
 - [x] Integracja Fetch API dla dynamicznego ładowania danych.
 - [x] Implementacja filtrów (cena, miasto, udogodnienia).
 - [x] Stworzenie modułu płatności (Mock Payment).
-- [ ] Integracja z bazą danych MongoDB (Future).
+- [x] Integracja z bazą danych MongoDB.
 
 # 4. Autorzy
 * **Oleh Hrushko
